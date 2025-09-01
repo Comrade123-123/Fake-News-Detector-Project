@@ -49,3 +49,33 @@ FakeNewsDetector/
    ```bash
    git clone https://github.com/Comrade123-123/Fake-News-Detector-Project.git
    cd Fake-News-Detector-Project
+2. Install dependencies
+
+pip install -r requirements.txt
+
+
+##If you don’t have a requirements.txt, install manually:
+
+pip install flask scikit-learn pandas numpy joblib
+
+3. Run the app
+   python app.py
+
+
+4. Open your browser and go to:
+   👉 http://127.0.0.1:5000
+
+🎯 How It Works
+
+User enters a news headline or article.
+Text is preprocessed with TF-IDF vectorization.
+The trained Logistic Regression model predicts if it’s fake or real.
+Result is shown instantly in the UI.
+
+
+📊 Future Improvements
+
+Add confidence scores (e.g., Fake with 82% certainty).
+Train using more advanced models (Naive Bayes, Random Forest, BERT).
+Support multiple languages.
+Deploy online (Heroku, Render, or Railway)
